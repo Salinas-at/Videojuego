@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <h1>Lucha!!</h1>
+    
+    <div>
+      <p id="bandido">Bandido</p>
+      <p id="healt">Vida: 100</p>
+      <p id="ataque">ataque: 10</p>
+    </div>
+    
+    <button onclick="atacar()">atacar</button>
+    
+    <div class="wasd">
+      <button class="d" onclick="derecha()">d</button>
+      <button class="s" onclick="abajo()">s</button>
+      <button class="w" onclick="arriba()">w</button>
+      <button class="a" onclick="izquierda()">a</button>
+    </div>
+    
+    <canvas id="juego" width="400" height="300"></canvas>
+
+   <script src="canvas.js"></script>
+<script src="enemigos.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
