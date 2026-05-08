@@ -69,19 +69,28 @@ let s = 20;
 let w = 20;
 let a = 20;
 
+function mantenerBandidoDentro() {
+  bandido.x = Math.max(0, Math.min(bandido.x, canvas.width - bandido.tamaño));
+  bandido.y = Math.max(0, Math.min(bandido.y, canvas.height - bandido.tamaño));
+}
+
 function derecha() {
   bandido.x += 10;
   bandido.direccion = "derecha";
+  mantenerBandidoDentro();
 }
 function abajo() {
   bandido.y += 10;
+  mantenerBandidoDentro();
 }
 function izquierda() {
   bandido.x -= 10;
   bandido.direccion = "izquierda";
+  mantenerBandidoDentro();
 }
 function arriba() {
   bandido.y -= 10;
+  mantenerBandidoDentro();
 }
 
 fondo.onload = function () {
