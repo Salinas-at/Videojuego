@@ -70,14 +70,14 @@ let w = 20;
 let a = 20;
 
 function derecha() {
-  bandido.x -= 10;
+  bandido.x += 10;
   bandido.direccion = "derecha";
 }
 function abajo() {
   bandido.y += 10;
 }
 function izquierda() {
-  bandido.x += 10;
+  bandido.x -= 10;
   bandido.direccion = "izquierda";
 }
 function arriba() {
