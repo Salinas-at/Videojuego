@@ -25,7 +25,7 @@ function atacarBandido() {
     let distancia = Math.sqrt(dx * dx + dy * dy);
     
     if (distancia < 50) {
-      bandido.vida -= 0.2;
+      bandido.vida = Math.max(0, bandido.vida - 0.05);
     }
   });
 }
